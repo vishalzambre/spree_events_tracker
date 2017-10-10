@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = '3.3.1'
   s.summary     = 'Spree Events Tracker is a spree extension used to track various user activities'
   s.description = 'Track keywords search, checkout events, add to cart, remove from cart and other events.'
-  s.required_ruby_version = '>= 2.2.7'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author    = ['Nimish Gupta', 'Tanmay Sinha', 'Nimish Mehta', "+ Vinsol Team"]
   s.email     = 'info@vinsol.com'
@@ -17,10 +17,8 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '~> 3.4.0.alpha'
   s.add_dependency 'spree_extension', '~> 0.0.5'
 
-  s.add_dependency 'spree_core', spree_version
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'capybara', '~> 2.6'
   s.add_development_dependency 'coffee-rails', '~> 4.2'
@@ -34,6 +32,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'shoulda-matchers', '~> 3.1.1'
   s.add_development_dependency 'simplecov', '~> 0.13.0'
   s.add_development_dependency 'sqlite3', '~> 1.3.0'
-  s.add_development_dependency 'spree_backend', spree_version
-  s.add_development_dependency 'spree_frontend', spree_version
+  s.add_development_dependency 'solidus_backend', ['>= 1.0', '< 3']
+  s.add_development_dependency 'solidus_frontend', ['>= 1.0', '< 3']
 end
